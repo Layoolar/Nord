@@ -11,15 +11,22 @@ import { Button } from '../../components/MyButton'
 import '../../config/firebase'
 import { styles } from './LoginScreenStyles'
 import { StackScreenProps } from "@react-navigation/stack";
+<<<<<<< HEAD
 import { useNavigation, NavigationProp } from '@react-navigation/native';
+=======
+>>>>>>> a9d09dfa3d1fdd247766faaf0380c9a12e285cc6
 import { getAuth, signInWithEmailAndPassword,sendPasswordResetEmail } from "firebase/auth";
 
 const auth = getAuth();
 
 
+<<<<<<< HEAD
 
 const LoginScreen = (): JSX.Element => {
   const navigation = useNavigation: <NavigationProp>()
+=======
+const LoginScreen = ({navigation}: {navigation: any}) => {
+>>>>>>> a9d09dfa3d1fdd247766faaf0380c9a12e285cc6
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 

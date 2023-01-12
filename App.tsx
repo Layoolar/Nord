@@ -33,18 +33,14 @@ import NotificationScreen from './src/pages/Notification/NotificationScreen';
 import PictureScreen from './src/pages/Picture/PictureScreen';
 import RegisterScreen from './src/pages/Register/RegisterScreen';
 import SplashScreen from './src/pages/Splash/SplashScreen';
-import LoggedInStack from './src/stacks/LoggedInStack';
-import LoggedOutStack from './src/stacks/LoggedOutStack';
-
+import BottomNavigation from './src/appNavigation/BottomNavigation';
+import OnboardingNavigation from './src/appNavigation/OnboardingNavigation';
+import { SafeAreaProvider }from 'react-native-safe-area-context'
 const App = () => {
   return (
-
-
-
-
-    <NavigationContainer>
-      <LoginScreen />
-    </NavigationContainer>
+<SafeAreaProvider>
+ <CalculatorScreen />
+ </SafeAreaProvider>
   );
 };
 

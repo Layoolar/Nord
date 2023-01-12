@@ -1,42 +1,21 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
+import { theme } from "../../core/theme";
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  forgotPassword: {
+    width: "100%",
+    alignItems: "flex-end",
+    marginBottom: 24
   },
-  inputContainer: {
-    width: '80%'
+  row: {
+    flexDirection: "row",
+    marginTop: 4
   },
-  input: {
-    backgroundColor: 'white',
-    paddingHorizontal: 15,
-    paddingVertical: 10,
-    borderRadius: 10,
-    marginTop: 5,
+  label: {
+    color: theme.colors.secondary
   },
-  buttonContainer: {
-    width: '60%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 40,
-  },
-  button: {
-    backgroundColor: '#0782F9',
-    width: '100%',
-    padding: 15,
-    borderRadius: 10,
-    alignItems: 'center', 
-    marginTop: 5
-  },
-  outlineText: {
-    color: '#0782F9',
-    fontWeight: '700',
-    fontSize: 16,
-    paddingTop: 10, 
-  },
-    text: {
-    color: '#fff',
-  },
-})
+  link: {
+    fontWeight: "bold",
+    color: theme.colors.primary
+  }
+});
